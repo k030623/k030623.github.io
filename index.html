@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유찬 · 포트폴리오</title>
+<meta name="description" content="LLM 보안과 AI 에이전트에 관심 있는 컴퓨터공학 전공생 유찬의 포트폴리오">
+<meta property="og:title" content="유찬 · 포트폴리오">
+<meta property="og:description" content="프롬프트 인젝션 방어 서베이와 AI 활용 개발 프로젝트">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">유찬</a>
+  <nav>
+    <a href="#about">소개</a><a href="#projects">프로젝트</a><a href="#resume">이력서</a>
+    <button id="theme" aria-label="테마 전환">◐</button>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <p class="eyebrow">Portfolio · 2026</p>
+  <h1>안녕하세요, <span class="accent">유찬</span>입니다.</h1>
+  <p class="lead">AI가 바깥 세상의 데이터를 읽고 행동하게 될 때 생기는 보안 문제를 공부합니다.<br>부산대학교 정보컴퓨터공학부 3학년.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">대표 프로젝트 보기</a>
+    <a class="btn" href="https://github.com/k030623" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="assets/resume.pdf" download>이력서 PDF</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>소개</h2>
+  <dl class="facts">
+    <div><dt>닉네임</dt><dd>유찬 (Yuchan)</dd></div>
+    <div><dt>현재 관심 분야</dt><dd>LLM 에이전트 보안(프롬프트 인젝션), 생성형 AI 응용, 소프트웨어 개발</dd></div>
+    <div><dt>GitHub</dt><dd><a href="https://github.com/k030623" target="_blank" rel="noopener">github.com/k030623</a></dd></div>
+    <div><dt>이수</dt><dd>첨단산업 부트캠프 AI 스프린트 수료 · 초급/중급 과정 이수</dd></div>
+  </dl>
+</section>
+
+<section id="projects">
+  <h2>대표 프로젝트</h2>
+
+  <article class="card featured">
+    <div class="tag">Featured · 서베이 연구</div>
+    <h3>LLM 프롬프트 인젝션 공격·방어 연구 동향 및 계층화된 대응 전략</h3>
+    <div class="grid">
+      <div>
+        <h4>문제 정의</h4>
+        <p>LLM이 이메일·웹페이지 같은 신뢰할 수 없는 데이터를 읽는 에이전트가 되면서, 그 안에 숨은 지시문이 모델 행동을 탈취하는 프롬프트 인젝션이 핵심 위협이 되었습니다. 방어 연구는 많지만 <b>자체 보고 성능과 독립 재평가 결과가 어긋나는데</b>, 이를 한눈에 비교해 실무 선택으로 연결한 자료가 드물었습니다.</p>
+      </div>
+      <div>
+        <h4>역할</h4>
+        <p>개인 프로젝트. 문헌 선정과 검증(인용·수치 대조), 분류 체계 설계, 비교 매트릭스와 의사결정 매트릭스 제안, 그림·표 제작, LaTeX 조판까지 전 과정을 수행했습니다. 초안·교정·검증에 AI를 활용했고, 인용 수치는 원문과 대조해 고쳤습니다.</p>
+      </div>
+      <div>
+        <h4>기술</h4>
+        <ul class="chips">
+          <li>XeLaTeX</li><li>BibTeX</li><li>Python</li><li>matplotlib</li><li>문헌 조사</li><li>AI 보조 검증</li>
+        </ul>
+      </div>
+      <div>
+        <h4>결과</h4>
+        <ul>
+          <li>2022–2026 핵심 문헌 <b>21편</b>을 공격(전달 경로·페이로드)과 방어(텍스트·모델·실행 수준)로 체계화</li>
+          <li>대표 방어 4종(StruQ, SecAlign, Meta SecAlign, CaMeL)을 한 표에서 비교</li>
+          <li>데이터 신뢰도 × 행동 가역성 기준의 <b>계층화된 방어 결정 매트릭스</b>와 보안–유용성 트레이드오프 정량 제시</li>
+          <li>8쪽, 표 4개, 그림 2개</li>
+        </ul>
+      </div>
+    </div>
+    <figure>
+      <img src="assets/fig_tradeoff.png" alt="CaMeL 방어의 보안과 유용성 트레이드오프 그래프" loading="lazy">
+      <figcaption>보고서의 그림: 방어 적용에 따른 유용성 변화와 공격 성공 건수</figcaption>
+    </figure>
+    <div class="links">
+      <a class="btn primary" href="assets/prompt-injection-survey.pdf" target="_blank" rel="noopener">데모 · 보고서 읽기 (PDF)</a>
+      <a class="btn" href="assets/survey-latex-source.zip" download>소스 코드 · LaTeX 원본 (zip)</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="tag">AI 스프린트 수업 프로젝트</div>
+    <h3>AI 기반 장학금 추천 웹사이트</h3>
+    <div class="grid">
+      <div><h4>문제 정의</h4><p>흩어져 있는 장학금 정보를 학생이 쉽게 찾도록 돕는 웹사이트를 만들고자 했습니다.</p></div>
+      <div><h4>역할</h4><p>수업 프로젝트로, 생성형 AI(ChatGPT)와 협업하며 웹사이트를 구현했습니다.</p></div>
+      <div><h4>기술</h4><ul class="chips"><li>ChatGPT 활용 개발</li><li>GitHub</li></ul></div>
+      <div><h4>링크</h4><p><a href="https://github.com/k030623/AI-sprint-schorlar" target="_blank" rel="noopener">소스 코드 (GitHub) ↗</a></p></div>
+    </div>
+  </article>
+</section>
+
+<section id="resume">
+  <h2>이력서</h2>
+  <p>한 장짜리 이력서를 PDF로 내려받을 수 있습니다.</p>
+  <a class="btn primary" href="assets/resume.pdf" download>이력서 PDF 다운로드</a>
+</section>
+</main>
+
+<footer>© 2026 유찬 · 정적 사이트, GitHub Pages로 배포 · 제작에 AI를 활용했습니다.</footer>
+<script src="script.js"></script>
+</body>
+</html>
